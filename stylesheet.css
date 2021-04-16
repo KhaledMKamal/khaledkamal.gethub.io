@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'New Tegomin', serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(40, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+}
+.heading {
+    grid-column: 1/41;
+    grid-row: 1/17;
+    display: grid;
+    grid-template-columns: repeat(40, 1fr);
+    grid-template-rows: repeat(10, 50px);
+    background-image: url(images/head-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.overlay {
+    grid-column: 1/41;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: repeat(40, 1fr);
+    background-color: #fff;
+    opacity: 0.1;
+}
+.fa-bars {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    z-index: 99;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    padding: 1vw;
+    padding-top: 0.5vw;
+    color: white;
+}
+.name {
+    grid-column: 1/41;
+    grid-row: 5/7;
+    justify-self: center;
+    padding: 0;
+    margin: 0;
+    font-size: clamp(4rem, 5vw, 6rem);
+    color:white;
+}
+.list-item {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+.main-nav {
+    grid-column: 26/41;
+    grid-row: 1/2;
+    margin: 0;
+    padding: 0;
+}
+.list {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-auto-rows: 50px;
+    place-items: center;
+    padding: 0;
+    margin: 0;
+}
+.profile {
+    grid-column: 1/5;
+}
+.projects {
+    grid-column: 6/10;
+}
+.contacts {
+    grid-column: 11/15;
+}
+.now {
+    border-bottom: 1px solid white;
+}
+
+.learn-more {
+    color: white;
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
+    grid-column: 1/41;
+    grid-row: 8/9;
+    margin: 0;
+    padding: 0;
+    padding-right: 2em;
+    padding-left: 2em;
+    justify-self: center;
+    border: 2px solid white;
+    background-color: rgba(255,255,255, .1);
+    font-weight: bold;
+}
